@@ -1,0 +1,44 @@
+/* base */
+@import 'base/reset';
+@import 'base/typography';
+
+/* utils */
+@import 'utils/variables';
+@import 'utils/maps';
+@import 'utils/mixins';
+
+/* components */
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/dropdown';
+@import 'components/filmcard';
+@import 'components/newscard';
+@import 'components/newscard2';
+@import 'components/titles';
+
+/* layouts */
+@import 'layouts/menu';
+@import 'layouts/footer';
+@import 'layouts/aboutus';
+@import 'layouts/article';
+@import 'layouts/calltoaction';
+@import 'layouts/contact';
+@import 'layouts/empty';
+@import 'layouts/film';
+@import 'layouts/films-in-newspage';
+@import 'layouts/films';
+@import 'layouts/map';
+@import 'layouts/news-home';
+@import 'layouts/news';
+@import 'layouts/reservation';
+
+
+/* pages */
+@import 'pages/home';
+@import 'pages/aboutus';
+@import 'pages/article';
+@import 'pages/contact';
+@import 'pages/film';
+@import 'pages/films';
+@import 'pages/news';
+@import 'pages/empty';
