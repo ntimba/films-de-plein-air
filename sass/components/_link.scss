@@ -1,0 +1,14 @@
+a{
+    text-decoration: none;
+}
+
+.link{
+
+    a{
+        // color: $colorDark;
+        text-decoration: none;
+        @include iconAfter('\F144');
+        display: flex;
+        gap: 5px;
+    }
+}

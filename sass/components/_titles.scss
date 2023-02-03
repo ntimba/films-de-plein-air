@@ -1,0 +1,18 @@
+.title{
+    color: $colorWarning;
+    font-weight: bold;
+    text-shadow: 3px 3px $colorPrimary;
+    
+    &--lg{
+        font-size: 5rem;
+    }
+
+    &--md{
+        font-size: 4rem;
+    }
+
+    &--sm{
+        font-size: 3rem;
+    }
+
+}

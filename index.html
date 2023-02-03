@@ -1,20 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="/public/img/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-            Films de plein air
-          </a>
-        </div>
-    </nav>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/style.css">
 
+    <title>Les films de plein air</title>
+</head>
+
+<body>
+    <nav class="navbar fixed-top  navbar-expand-md navbar"><!-- Navigation -->
+        <div class="container-md">
+            <a class="navbar-brand" href="index.html">
+                <img src="public/img/logo.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavbit">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">À propos de nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Films</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="news.html">Actualités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav><!-- End Navigation -->
+
+    <div class=" text-white hero"><!-- Hero -->
+        <div class="container-md">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Films de plein air</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic est quibusdam culpa explicabo
+                        voluptate quas laboriosam, eaque odit accusamus quaerat sint nam id facilis iure, cupiditate
+                        animi quisquam necessitatibus totam?</p>
+                    <div class="link">
+                        <a href="aboutus.html">À propos de nous</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Hero -->
+
+    <div class="films-home mt-5"><!-- Films sections -->
+        <div class="container-md mb-5">
+            <!-- Title -->
+            <div class="row mb-5">
+                <div class="col">
+                    <div class="title title--md">Films</div>
+                </div>
+            </div>
+
+            <!-- Films -->
+            <div class="row row-cols-lg-4 row-cols-md-3">
+                <div class="card filmcard">
+                    <img src="public/uploads/films/film1.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h5 class="card-title">The menu</h5>
+                        <p class="filmcard__date"> 05/08/2023</p>
+                        <p class="filmcard__geo"> Parc Monceau</p>
+                        <p class="filmcard__clock"> 18:30 - 20:30</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in .</p>
+                        <div class="filmcard__links">
+                            <div class="link">
+                                <a href="film.html">Voir plus </a>
+                            </div>
+
+                            <div class="link">
+                                <a href="film.html#sectionreservation">Reserver </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card filmcard">
+                    <img src="public/uploads/films/film2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h5 class="card-title">The menu</h5>
+                        <p class="filmcard__date"> 05/08/2023</p>
+                        <p class="filmcard__geo"> Parc Monceau</p>
+                        <p class="filmcard__clock"> 18:30 - 20:30</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in .</p>
+                        <div class="filmcard__links">
+                            <div class="link">
+                                <a href="film.html">Voir plus </a>
+                            </div>
+
+                            <div class="link">
+                                <a href="film.html#sectionreservation">Reserver </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card filmcard">
+                    <img src="public/uploads/films/film3.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h5 class="card-title">The menu</h5>
+                        <p class="filmcard__date"> 05/08/2023</p>
+                        <p class="filmcard__geo"> Parc Monceau</p>
+                        <p class="filmcard__clock"> 18:30 - 20:30</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in .</p>
+                        <div class="filmcard__links">
+                            <div class="link">
+                                <a href="film.html">Voir plus </a>
+                            </div>
+
+                            <div class="link">
+                                <a href="film.html#sectionreservation">Reserver </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card filmcard">
+                    <img src="public/uploads/films/film4.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+
+                        <h5 class="card-title">The menu</h5>
+                        <p class="filmcard__date"> 05/08/2023</p>
+                        <p class="filmcard__geo"> Parc Monceau</p>
+                        <p class="filmcard__clock"> 18:30 - 20:30</p>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in .</p>
+                        <div class="filmcard__links">
+                            <div class="link">
+                                <a href="film.html">Voir plus </a>
+                            </div>
+
+                            <div class="link">
+                                <a href="film.html#sectionreservation">Reserver </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Films sections -->
+
+    <div class="container"><!-- Articles -->
+        <div class="row">
+            <h2 class="title title--md mb-5">Actualités</h2>
+        </div>
+
+        <div class="row row-cols-lg-3 row-cols-md-2">
+            <div class="card newscard">
+                <img src="public/uploads/articles/article1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title Je le mab test</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <div class="newscard__links">
+                        <a href="article.html" class="">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card newscard">
+                <img src="public/uploads/articles/article2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title Je le mab test</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <div class="newscard__links">
+                        <a href="article.html" class="">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card newscard">
+                <img src="public/uploads/articles/article4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title Je le mab test</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the card's content.</p>
+
+                    <div class="newscard__links">
+                        <a href="article.html" class="">Lire la suite</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Articles Section -->
+
+    <footer><!-- Footer -->
+        <div class="container-md">
+            <div class="row row-cols-md-2 mt-4">
+                <div class="col">
+                    <p class="callToAction">Prêt à travailler avec nous ?</p>
+                    <p class="link">
+                        <a href="contact.html">Contacter nous</a>
+                    </p>
+
+                </div>
+                <div class="col">
+                    <ul class="mentions">
+                        <li><a href="legal.html">Mentions légales</a></li>
+                        <li><a href="privacy-policy.html">Politique de confidentialité</a></li>
+                        <li><a href="cookies.html">Cookies</a></li>
+                        <li><a href="cgu.html">CGU</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <ul class="social">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+            <div class="row copyright">
+                <div class="col">
+                    <p>Les films de plein air © 2023 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

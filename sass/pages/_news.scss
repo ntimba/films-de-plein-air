@@ -1,0 +1,19 @@
+// News
+
+.pagination{
+    // border: 2px solid green;
+
+    // border-radius: 0;
+    
+    .page-item{
+        // background-color: $colorSecondary;
+        
+        .page-link{
+            // border: none;
+            border: 1px solid $colorWhite;
+            color: $colorWarning;
+            background-color: $colorSecondary;
+        }
+    }
+    
+}

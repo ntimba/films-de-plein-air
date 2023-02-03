@@ -1,7 +1,299 @@
-/* base */
+/* base */ /*
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+/*
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+body {
+  font-family: "Poppins", "Open Sans", sans-serif;
+}
+
 /* utils */
 /* components */
+.btn {
+  background-color: #0E323F;
+  color: #FFCC00;
+  border-radius: 0;
+}
+
+.filmcard {
+  border: none;
+}
+.filmcard p {
+  margin-bottom: 5px;
+}
+.filmcard .card-text {
+  margin-bottom: 10px;
+}
+.filmcard__date {
+  color: #051318;
+}
+.filmcard__date::before {
+  font-family: "Bootstrap-icons";
+  content: "\f214";
+  font-size: 1rem;
+}
+.filmcard__geo::before {
+  font-family: "Bootstrap-icons";
+  content: "\f3e7";
+  font-size: 1rem;
+}
+.filmcard__clock::before {
+  font-family: "Bootstrap-icons";
+  content: "\f291";
+  font-size: 1rem;
+}
+.filmcard__links {
+  display: flex;
+  gap: 30px;
+}
+.filmcard__links a {
+  color: #051318;
+}
+.filmcard__links a:hover {
+  color: #227C9D;
+}
+
+.newscard {
+  border: none;
+}
+.newscard .card-title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.newscard__links a {
+  color: #051318;
+  display: flex;
+  gap: 10px;
+}
+.newscard__links a::after {
+  font-family: "Bootstrap-icons";
+  content: "\f144";
+  font-size: 1rem;
+}
+.newscard__links a:hover {
+  color: #227C9D;
+}
+
+.title {
+  color: #FFCC00;
+  font-weight: bold;
+  text-shadow: 3px 3px #227C9D;
+}
+.title--lg {
+  font-size: 5rem;
+}
+.title--md {
+  font-size: 4rem;
+}
+.title--sm {
+  font-size: 3rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link a {
+  text-decoration: none;
+  display: flex;
+  gap: 5px;
+}
+.link a::after {
+  font-family: "Bootstrap-icons";
+  content: "\f144";
+  font-size: 1rem;
+}
+
 /* layouts */
+.navbar {
+  background-color: #0E323F;
+}
+.navbar .nav-link.active {
+  border-bottom: 2px solid #FFCC00;
+  color: #FFFFFF;
+}
+.navbar .nav-link {
+  color: #FFFFFF;
+}
+.navbar .nav-link:hover {
+  border-bottom: 2px solid #FFCC00;
+}
+
+.navbar-brand img {
+  width: 40px;
+}
+
+button.navbar-toggler {
+  color: #FFCC00;
+  border: none;
+  font-size: 2rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0E323F;
+  color: #FFCC00;
+}
+
+.accordion-body {
+  border: 2px solid #0E323F;
+  color: #051318;
+}
+
+footer {
+  background-color: #051318;
+  color: #FFFFFF;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer .callToAction {
+  font-weight: bolder;
+  font-size: 3rem;
+  line-height: 1;
+}
+footer .social {
+  margin-top: 50px;
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  gap: 10px;
+}
+footer .mentions {
+  padding: 0;
+  list-style-type: none;
+}
+footer .mentions a:hover {
+  color: #FFCC00;
+}
+
+.callToAction__link a {
+  color: #051318;
+}
+
+.form input {
+  border: 1px solid #051318;
+  border-radius: 0;
+}
+.form textarea {
+  border: 1px solid #051318;
+  border-radius: 0;
+}
+
 /* pages */
+.hero {
+  background-color: #0E323F;
+  margin-top: 0;
+  height: 500px;
+  display: grid;
+  align-items: center;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.hero a {
+  color: #FFCC00;
+}
+
+.article .image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.film a {
+  color: #051318;
+}
+.film a:hover {
+  color: #FFCC00;
+}
+.film__date {
+  display: flex;
+  gap: 10px;
+}
+.film__date::before {
+  font-family: "Bootstrap-icons";
+  content: "\f214";
+  font-size: 1rem;
+}
+.film__time {
+  display: flex;
+  gap: 10px;
+}
+.film__time::before {
+  font-family: "Bootstrap-icons";
+  content: "\f291";
+  font-size: 1rem;
+}
+.film__address {
+  display: flex;
+  gap: 10px;
+}
+.film__address::before {
+  font-family: "Bootstrap-icons";
+  content: "\f3e7";
+  font-size: 1rem;
+}
+.film___reservation-price {
+  display: flex;
+  gap: 10px;
+}
+.film___reservation-price::before {
+  font-family: "Bootstrap-icons";
+  content: "\f6c8";
+  font-size: 1rem;
+}
+
+.pagination .page-item .page-link {
+  border: 1px solid #FFFFFF;
+  color: #FFCC00;
+  background-color: #0E323F;
+}
 
 /*# sourceMappingURL=style.css.map */

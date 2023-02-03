@@ -1,0 +1,41 @@
+.film{
+
+    a{
+        color: $colorDark;
+        &:hover{
+            color: $colorWarning;
+        }
+    }
+    &__date{
+        display: flex;
+        gap: 10px;
+        @include iconBefore('\F214');
+    }
+    
+    &__time{
+        display: flex;
+        gap: 10px;
+        @include iconBefore('\F291'); 
+        // font-weight: bold;
+    }
+
+    &__address{
+        display: flex;
+        gap: 10px;
+        @include iconBefore('\F3E7');
+    }
+
+    &___reservation-price{
+        display: flex;
+        gap: 10px;
+        @include iconBefore('\F6C8');
+    }
+    
+
+
+
+    
+}
+
+
+

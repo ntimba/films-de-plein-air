@@ -1,0 +1,18 @@
+// icon before
+@mixin iconBefore($iconCode){
+    &::before{
+        font-family: 'Bootstrap-icons';
+        content: $iconCode;
+        font-size: 1rem;
+    }
+}
+
+
+// icone after
+@mixin iconAfter($iconCode){
+    &::after{
+        font-family: 'Bootstrap-icons';
+        content: $iconCode;
+        font-size: 1rem;
+    }
+}

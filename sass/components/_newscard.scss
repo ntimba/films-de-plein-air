@@ -1,0 +1,27 @@
+.newscard{
+    border: none;
+
+    .card-title{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    
+
+
+    &__links{
+
+
+        a{
+            color: $colorDark;
+            @include iconAfter('\F144');
+            display: flex;
+            gap: 10px;
+
+            &:hover{
+                color: $colorPrimary;
+            }
+        }
+        
+    }
+    
+}

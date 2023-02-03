@@ -1,0 +1,44 @@
+.filmcard{
+
+    border: none;
+    
+   p{
+    margin-bottom: 5px;
+   }
+
+   .card-text{
+    margin-bottom: 10px;
+   }
+   
+    &__date{
+        @include iconBefore('\F214');
+        color: $colorDark;
+    }
+
+    &__geo{
+        @include iconBefore('\F3E7'); 
+    }
+
+
+    &__clock{
+        @include iconBefore('\F291');
+    }
+
+
+    &__links{
+        display: flex;
+        gap: 30px;
+
+        a{
+            color: $colorDark;
+            &:hover{
+                color: $colorPrimary;
+            }
+        }
+        
+    }
+
+
+
+
+}

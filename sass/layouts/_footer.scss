@@ -1,0 +1,42 @@
+footer{
+    // background-color: $colorSecondary;
+    background-color: $colorDark;
+
+    color: $colorWhite;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    a{
+        color: $colorWhite;
+    }
+
+    .callToAction{
+        font-weight: bolder;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .social{
+        margin-top: 50px;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        gap: 10px;
+        // font-size: 1.2rem;
+
+    }
+
+
+    .mentions{
+        padding: 0;
+        list-style-type: none;
+
+        a{
+            &:hover{
+                color: $colorWarning;
+            }
+            
+        }
+    }
+}

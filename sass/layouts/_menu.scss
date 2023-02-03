@@ -1,0 +1,41 @@
+.navbar{
+    background-color: $colorSecondary;
+
+    .nav-link.active{
+        border-bottom: 2px solid $colorWarning;
+        color: $colorWhite;
+    }
+    
+    .nav-link{
+        color: $colorWhite;
+
+        &:hover{
+            border-bottom: 2px solid $colorWarning;
+        }        
+        
+    }
+}
+
+.navbar-brand{
+    img{
+        width: 40px;
+    }
+}
+
+
+button.navbar-toggler{
+    color: $colorWarning;
+    border: none;
+    font-size: 2rem;
+}
+
+// Accordion
+.accordion-button:not(.collapsed){
+    background-color: $colorSecondary;
+    color: $colorWarning;
+}
+
+.accordion-body{
+    border: 2px solid $colorSecondary;
+    color: $colorDark;
+}
