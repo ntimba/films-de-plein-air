@@ -58,6 +58,10 @@ body {
   color: #FFCC00;
   border-radius: 0;
 }
+.btn:hover {
+  background-color: #FFCC00;
+  color: #051318;
+}
 
 .filmcard {
   border: none;
@@ -131,6 +135,11 @@ body {
 }
 .title--sm {
   font-size: 3rem;
+}
+@media all and (max-width: 320px) {
+  .title--md {
+    font-size: 3rem;
+  }
 }
 
 a {

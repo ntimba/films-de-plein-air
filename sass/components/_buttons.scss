@@ -2,4 +2,10 @@
     background-color: $colorSecondary;
     color: $colorWarning;
     border-radius: 0;
+
+    &:hover{
+        background-color: $colorWarning;
+        color: $colorDark;
+    }
 }
+

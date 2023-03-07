@@ -15,4 +15,13 @@
         font-size: 3rem;
     }
 
+
+    // taille mobile
+
+    @media all and (max-width:320px){
+        &--md{
+            font-size: 3rem;
+        }
+    }
+
 }
